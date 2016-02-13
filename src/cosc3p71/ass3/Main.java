@@ -39,7 +39,7 @@ public class Main {
 		bits[14] = new int[] { 1, 1, 1, 0 };
 		bits[15] = new int[] { 1, 1, 1, 1 };
 
-		int[] parity = new int[] { 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0 };
+		int[] parities = new int[] { 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0 };
 
 		Terminal t = new Terminal();
 
@@ -52,7 +52,7 @@ public class Main {
 		System.out.println("Training the neural network...");
 		for (int j = 0; j < it; j++) {
 			for (int i = 0; i < 16; i++) {
-				pbc.train(bits[i], parity[i]);
+				pbc.train(bits[i], parities[i]);
 			}
 		}
 
@@ -62,7 +62,7 @@ public class Main {
 			sb.append("input: ");
 			sb.append(Arrays.toString(bits[i]));
 			sb.append("   expected: ");
-			sb.append(parity[i]);
+			sb.append(parities[i]);
 			sb.append("   output: ");
 			sb.append(pbc.getParity(bits[i]) > 0.5 ? 1 : 0);
 			sb.append("   raw output: ");
