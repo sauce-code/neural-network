@@ -21,25 +21,28 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 
-		int[][] bits = new int[16][];
-		bits[0] = new int[] { 0, 0, 0, 0 };
-		bits[1] = new int[] { 0, 0, 0, 1 };
-		bits[2] = new int[] { 0, 0, 1, 0 };
-		bits[3] = new int[] { 0, 0, 1, 1 };
-		bits[4] = new int[] { 0, 1, 0, 0 };
-		bits[5] = new int[] { 0, 1, 0, 1 };
-		bits[6] = new int[] { 0, 1, 1, 0 };
-		bits[7] = new int[] { 0, 1, 1, 1 };
-		bits[8] = new int[] { 1, 0, 0, 0 };
-		bits[9] = new int[] { 1, 0, 0, 1 };
-		bits[10] = new int[] { 1, 0, 1, 0 };
-		bits[11] = new int[] { 1, 0, 1, 1 };
-		bits[12] = new int[] { 1, 1, 0, 0 };
-		bits[13] = new int[] { 1, 1, 0, 1 };
-		bits[14] = new int[] { 1, 1, 1, 0 };
-		bits[15] = new int[] { 1, 1, 1, 1 };
+		int[][] bits = {
+			// @formatter:off
+			{ 0, 0, 0, 0 },
+			{ 0, 0, 0, 1 },
+			{ 0, 0, 1, 0 },
+			{ 0, 0, 1, 1 },
+			{ 0, 1, 0, 0 },
+			{ 0, 1, 0, 1 },
+			{ 0, 1, 1, 0 },
+			{ 0, 1, 1, 1 },
+			{ 1, 0, 0, 0 },
+			{ 1, 0, 0, 1 },
+			{ 1, 0, 1, 0 },
+			{ 1, 0, 1, 1 },
+			{ 1, 1, 0, 0 },
+			{ 1, 1, 0, 1 },
+			{ 1, 1, 1, 0 },
+			{ 1, 1, 1, 1 }
+			// @formatter:on
+		};
 
-		int[] parities = new int[] { 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0 };
+		int[] parities = { 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 0 };
 
 		Terminal t = new Terminal();
 
