@@ -67,7 +67,7 @@ public class Main {
 			sb.append("   expected: ");
 			sb.append(parities[i]);
 			sb.append("   output: ");
-			sb.append(pbc.getParity(bits[i]) > 0.5 ? 1 : 0);
+			sb.append(pbc.getParity(bits[i]) < 0.5 ? 0 : 1);
 			sb.append("   raw output: ");
 			sb.append(pbc.getParity(bits[i]));
 			System.out.println(sb);
