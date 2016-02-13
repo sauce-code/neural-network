@@ -1,4 +1,4 @@
-package cosc3p71.ass3;
+package neural;
 
 /**
  * Represents a Node, which knows his parents and their weights and is able to

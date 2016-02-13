@@ -1,4 +1,4 @@
-package cosc3p71.ass3;
+package neural;
 
 /**
  * Calculates the parity bit of numbers using a feed-forward neural network,

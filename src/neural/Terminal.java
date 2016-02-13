@@ -1,4 +1,4 @@
-package cosc3p71.ass3;
+package neural;
 
 import java.io.BufferedReader;
 import java.io.IOException;
